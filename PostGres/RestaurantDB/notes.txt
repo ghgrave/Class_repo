@@ -1,0 +1,39 @@
+
+
+reservations
+===========
+reservation_id => PK database do it Serial NOT NULL could be a lot?
+party_size => INT with limits > 0 and < 9 NOT NULL
+date_of_reservation => DATE required need to check timeframe(s) formatted best way possible
+time_of_reservation => DATE timestamp? formatting needs more research? every 15 minutes
+is_confirmed => boolean default false business controlled
+cancelled => boolean default false user controlled
+seat_preference => INT relate to a preferences table - FK  - required
+special_notes => (dietary, special ocassion, etc...) TEXT not required
+receive_newsletter => boolean default TRUE
+restaurant_id => INT FK required relates to loactions table?
+user_id => FK INT relate to users table
+
+
+seating_preferences
+===============
+seating_preferences_id => PK database do it, realtes to seat_prefernce (reservations)
+seating_location => VARCHAR(15) ("indoor", "outdoor", "first")
+one to one with reservations
+
+restaurant_locations
++++++++++++++
+restaurant_location_id => PK relates to reservations (restaurant_id)
+restaurant_name => VARCHAR(10) required
+restaurant_address => VARCHAR(10) required
+restaurant_city => VARCHAR(10) required
+one to one reservations
+
+users
+=============
+user_id => PK database taking care of NOT NULL relate to reservations
+user_first_name =>  not null VARCHAR(10)
+user_last_name => can be null VARCHAR(10)
+user_email => NOT null VARCHAR(20)
+user_phone => NOT null CHAR(10)
+one user many reservations
