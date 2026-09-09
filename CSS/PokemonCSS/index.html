@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pokémon CSS Basics</title>
+
+    <style>
+
+        :root {
+            --navy: #12355b;
+            --blue: #2f80ed;
+            --teal: #1fb5a9;
+            --green: #4caf50;
+            --light-blue: #dff4ff;
+            --light-green: #e2f7e7;
+            --orange: #ff9f43;
+            --yellow: #ffd166;
+            --red: #ff5a5f;
+            --white: #ffffff;
+            --dark: #263238;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, var(--blue), var(--red));
+            margin: 30px;
+        }
+
+        .pokemon-image {
+            width: 250px;
+            height: 250px;
+            margin: 20px auto;
+            background-image: url("https://unite.pokemon.com/images/pokemon/pikachu/carousel/carousel-pikachu.png");
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        h1 {
+            font-family: "Trebuchet MS", Arial, sans-serif;
+            font-size: 48px;
+            color: var(--navy);
+            text-align: center;
+            text-shadow: 2px 2px 2px var(--yellow);
+        }
+
+        h2 {
+            color: var(--blue);
+        }
+
+        p {
+            color: var(--dark);
+        }
+
+        .trainer-card {
+            background-color: var(--white);
+            width: 500px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 4px solid var(--navy);
+            box-shadow: 5px 5px 10px #888888;
+        }
+
+        .pokemon-box {
+            background-color: var(--light-blue);
+            margin: 15px 0;
+            padding: 15px;
+            border: 3px solid var(--teal);
+        }
+
+        .pokemon-name {
+            color: var(--orange);
+            font-weight: bold;
+        }
+
+        #featured-pokemon {
+            background-color: var(--light-green);
+            border: 4px dashed var(--orange);
+        }
+
+        input {
+            padding: 8px;
+            margin: 10px 0;
+            border: 2px solid var(--green);
+        }
+
+        input:focus {
+            background-color: var(--yellow);
+            border: 3px solid var(--blue);
+        }
+
+        input::placeholder {
+            color: var(--orange);
+            font-weight: bold;
+            font-style: italic;
+            opacity: 1;
+        }
+
+        .trainer-rules {
+            height: 60px;
+            overflow-y: scroll;
+            background-color: var(--light-green);
+            border: 3px solid var(--teal);
+            margin-top: 15px;
+            padding: 10px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<div class="pokemon-image"></div>
+
+<h1>Pokémon Trainer Academy</h1>
+
+<div class="trainer-card">
+
+    <h2>Welcome, Trainer!</h2>
+
+    <p>
+        Welcome to the
+        <span class="pokemon-name">Pokémon Trainer Academy</span>.
+        Your goal is to learn about different Pokémon and build your team.
+    </p>
+
+    <div class="pokemon-box">
+        <h2>Bulbasaur</h2>
+
+        <p>
+            <span class="pokemon-name">Bulbasaur</span>
+            is a Grass and Poison type Pokémon.
+        </p>
+    </div>
+
+    <div class="pokemon-box">
+        <h2>Squirtle</h2>
+
+        <p>
+            <span class="pokemon-name">Squirtle</span>
+            is a Water type Pokémon.
+        </p>
+    </div>
+
+    <div class="pokemon-box" id="featured-pokemon">
+        <h2>Featured Pokémon: Pikachu</h2>
+
+        <p>
+            This week's featured Pokémon is
+            <span class="pokemon-name">Pikachu</span>.
+        </p>
+    </div>
+
+    <h2>Search for a Pokémon</h2>
+
+    <input type="text"
+           placeholder="Enter Pokémon name">
+
+    <h2>Trainer Rules</h2>
+
+    <div class="trainer-rules">
+        Trainers should take care of their Pokémon.
+        Always bring enough Poké Balls before exploring.
+        Do not enter tall grass without being prepared.
+        Visit a Pokémon Center when your team needs help.
+        Trainers should respect other trainers during battles.
+        Always check your supplies before beginning a new adventure.
+    </div>
+
+</div>
+
+</body>
+
+</html>

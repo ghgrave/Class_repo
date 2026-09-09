@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Form Demo</title>
+</head>
+<body>
+
+<!--action tells the form where to send the payload-->
+<!--method tells us HOW to send the data-->
+<!--only TWO methods with forms - GET and POST-->
+<!--by default - GET is the VERB!-->
+<form action="/api/getData">
+        <!--    inputs and submission-->
+
+<!--    old school-->
+<!--    for relates to the id!!!!-->
+<!--    <label for="fname">First Name:</label>-->
+<!--    <input-->
+<!--            type="text"-->
+<!--            name="fname"-->
+<!--            id="fname"-->
+<!--            placeholder="Please give me your first name....."-->
+<!--    >-->
+
+<!--    new school-->
+    <label>First Name:
+        <input type="text"
+                name="first_name"
+                id="fname"
+                placeholder="Please give me your first name....."
+        >
+    </label>
+
+    <label>Are you Alive?
+        <input type="radio" name="isAlive" id="" value="1" checked>Yes
+        <input type="radio" name="isAlive" id="" value="0">No
+        <input type="radio" name="isAlive" id="" value="-1">Zombie
+    </label>
+
+<!--    <label>Are you Married?-->
+<!--        <input type="radio" name="isMarried" id="">Yes-->
+<!--        <input type="radio" name="isMarried" id="">No-->
+<!--        <input type="radio" name="isMarried" id="">Zombie-->
+<!--    </label>-->
+
+    <label>
+        Opt in for Newsletter:
+        <input type="checkbox" name="newsletter" id="" value="true">
+    </label>
+
+<!--    creates an object we can send to server and eventually to database-->
+<!--example-->
+<!--    {-->
+<!--    "first_name": "JM",-->
+<!--    "isAlive": "-1",-->
+<!--    "newsletter": "true"-->
+<!--    }-->
+
+
+
+
+        <!--        submit-->
+    <br>
+    <button type="submit">SUBMIT</button>
+    <br>
+    <button type="reset">RESET</button>
+</form>
+
+</body>
+</html>

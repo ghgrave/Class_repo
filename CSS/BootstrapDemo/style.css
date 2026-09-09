@@ -1,0 +1,32 @@
+/*body {*/
+/*    background-color: red !important;*/
+/*}*/
+
+/*body {*/
+/*    background-color: blue;*/
+/*}*/
+
+/*body > button.btn.btn-primary {*/
+/*    background-color: purple;*/
+/*}*/
+
+/*resets and gives us the developer control of these styles*/
+* {
+    margin: 0;
+    padding:0;
+    border: none;
+}
+
+body > button.btn.btn-dark {
+    background-image: linear-gradient(to right, purple, green);
+}
+
+body > button.btn.btn-light {
+    font-size: 50px;
+}
+
+.card-text {
+    width: 90%;
+    height: 20vh;
+    overflow: scroll;
+}

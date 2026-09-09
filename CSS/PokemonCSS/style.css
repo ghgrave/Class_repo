@@ -1,0 +1,88 @@
+body {
+    background-image: linear-gradient(to bottom, lightblue, blue);
+    background-repeat: no-repeat;
+    height: 100vh;
+    text-align: center;
+}
+
+h1 {
+    color: #ffffff;
+    text-shadow: 3px 3px 3px black;
+}
+
+.trainer-card {
+    border: 3px black solid;
+    border-radius: 5px;
+    width: 50vw;
+    margin: 10px auto;
+    box-shadow: 3px 3px 7px white;
+}
+
+.pokemon-name {
+    color: white;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px black;
+    font-size: 16px;
+}
+
+input::placeholder {
+    color: red;
+}
+
+.pokemon-box {
+    border: black 3px solid;
+    border-radius: 10px;
+    background-color: greenyellow;
+}
+
+#featured-pokemon {
+    border: red 3px dashed;
+    border-radius: 10px;
+    background-color: lightpink;
+}
+
+.trainer-rules {
+    border: 3px solid white;
+    width: 20vw;
+    margin: 0 auto 10px;
+    height: 10vh;
+    overflow: scroll;
+    /*text-justify: auto;*/
+}
+
+h2 {
+    font-family: "Henny Penny", system-ui;
+}
+
+.pokemon-image {
+    font-size: 64px;
+    color: brown;
+    text-shadow: 3px 3px 5px white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

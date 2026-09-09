@@ -8,7 +8,7 @@ ENV POSTGRES_DB=monsters_db
 
 # Optional: copy initialization scripts into the container
 # These scripts will run on first container start
-COPY ./init.sql /docker-entrypoint-initdb.d/
+COPY init.sql /docker-entrypoint-initdb.d/
 
 # Expose the default PostgreSQL port
 EXPOSE 3000

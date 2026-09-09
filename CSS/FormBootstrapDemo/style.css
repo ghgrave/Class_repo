@@ -1,0 +1,10 @@
+form {
+    border: red 3px solid;
+    border-radius: 25px;
+    background-image: radial-gradient(yellow, lightgreen);
+}
+
+body {
+    background-color: lightcoral;
+}
+

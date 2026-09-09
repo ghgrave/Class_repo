@@ -1,0 +1,8 @@
+Create a project called FormBootstrapDemo
+Two files : home and a contact
+Css file
+Install Bootstrap
+Navbar on top of each page
+working links to your two pages on BOTH navbars!!!
+
+10 minutes

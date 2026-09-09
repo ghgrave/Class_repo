@@ -1,0 +1,14 @@
+Create a parent folder for your project. I called mine FormDemo2.
+Build boilerplate html
+Create a simple form with submit and reset buttons
+NO inputs at this time!!!
+
+    mapped ALL route to basically /api
+
+
+    @GetMapping
+    (route="/getData")
+    Java Code
+
+    @GetMapping
+    (route="/sendData")

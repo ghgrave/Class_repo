@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Table Demo</title>
+<!--  INTERNAL Stylesheet/Styling  -->
+    <!--   we need to be able to select stuff-->
+    <style>
+        tr {
+            background-color: blue;
+            color: white;
+        }
+
+        #doggy { /* id selector*/
+            background-color: green;
+        }
+
+        .yellow { /* class selector*/
+            background-color: yellow;
+            color: black;
+        }
+
+        #doggy,
+        .yellow {
+            background-color: orange;
+        }
+
+        #doggy.yellow.redDog {
+
+        }
+
+    </style>
+,
+
+
+</head>
+<body>
+<!--tables-->
+<table >
+<!--    1st row - header-->
+    <tr >
+        <th>Dogs</th>
+        <th>Cats</th>
+    </tr>
+    <tr id="doggy" >
+        <td>Atlas</td>
+        <td class="yellow redDog doggyHorse kitty">Muffy</td>
+    </tr>
+    <tr>
+        <td>Ranger</td>
+        <td class="yellow">N/A</td>
+    </tr>
+<!--    add new row here-->
+</table>
+
+</body>
+</html>
