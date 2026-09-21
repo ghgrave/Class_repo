@@ -65,5 +65,39 @@ let  monsters = [
 }
 
 // invoke/call the function
-createNewMonster();
+// createNewMonster();
 
+// let numArray = [11, 100, 1, 5, 65, 1234, 2]
+//
+// // builtin javascript array method called .sort()
+//
+// // let sortedNumArray = array.sort((a, b)=> a-b)
+// let weirdResults = numArray.sort()
+// console.log(weirdResults);
+// let goodResults =numArray.sort((a, b)=> {
+//     // return something!
+//     // return a-b; // ascending order
+//     return b-a; // descending order
+// })
+// console.log(goodResults);
+let sortedMonsters = monsters.sort((a, b) =>{
+    return a.name - b.name
+})
+console.log(sortedMonsters);
+
+const hunters = [
+    "alex",
+    "Riley",
+    "Morgan",
+    "Alex",
+    "Casey"
+];
+
+// we can level the playing field - upper or lower case
+
+let newSortedHunters = hunters.map(element => {
+    return element.toLowerCase();
+})
+
+console.log(newSortedHunters.sort());
+console.log(hunters.sort())
