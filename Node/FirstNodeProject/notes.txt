@@ -1,0 +1,16 @@
+Packages
+1) documentation
+2) Examples
+3) How to install
+4) downloads
+5) maintained - published?
+
+Installing
+1) Create a Parent Directory
+2) npm init (initializes/creates package.json AKA "bluprint")
+         *** DO NOT install using -g or -G unless told to ***
+3) create index.js file
+4) install package(s)
+        *** npm i(nstall) <name of package> ***
+        *** -D *** = devdependency
+5) import packages
