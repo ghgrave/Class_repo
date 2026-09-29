@@ -8,9 +8,12 @@
 <body>
 <!--mount our react-->
 <h1>Show me the React!!!</h1>
+
 <div id="root">
 <!--    react will show up-->
 </div>
+
+
 
 <script src="https://unpkg.com/react@16.0.0-rc.2/umd/react.development.js"></script>
 <script src="https://unpkg.com/react-dom@16.0.0-rc.2/umd/react-dom.development.js"></script>
@@ -19,12 +22,49 @@
 <!--personal JS-->
 <!--IMAGINE - this is ALL in another file-->
 <script type="text/babel">
+    // let element = <p>Hello from the p tag!!!</p>
+    let rootElement = document.getElementById("root")
+    // first component aka custom HTML
+    const DoggyHorse = ()=>{
+        return (
+            // this not the same as React.Fragment
+            <div>
+                <p>Hello from inside the App component!</p>
+                <p>This is different!</p>
+                <p>DoggyHorse time is {new Date().toLocaleTimeString()}</p>
 
-    ReactDOM.render(<p>Hello fromt eh p tag!!!</p>,
-        document.getElementById("root"))
+            </div>
+        )
+    }
+
+    const FeelingsList = () => {
+        return (
+            <div>
+                <h1>My List of Feelings</h1>
+                <ul>
+                    <li>Happy</li>
+                    <li>Sad</li>
+                    <li>Confused!!!!</li>
+                </ul>
+            </div>
+        )
+    }
+    // create a React component using function
+    const Garfield = () =>{
+        return (
+            <div className="theimage">
+                <FeelingsList /><FeelingsList /><FeelingsList />
+                <h1 className="name">Life</h1>
+                <img src="https://i.imgur.com/F67Eq7J.jpeg"></img>
+                <h3>How does he feel?</h3>
+                <FeelingsList />
+            </div>
+        );
 
 
+    }
 
+    ReactDOM.render(<Garfield/>, rootElement)
 </script>
 </body>
 </html>
