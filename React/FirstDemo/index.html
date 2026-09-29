@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>First React DEMO</title>
+</head>
+<body>
+<!--mount our react-->
+<h1>Show me the React!!!</h1>
+<div id="root">
+<!--    react will show up-->
+</div>
+
+<script src="https://unpkg.com/react@16.0.0-rc.2/umd/react.development.js"></script>
+<script src="https://unpkg.com/react-dom@16.0.0-rc.2/umd/react-dom.development.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.js"></script>
+
+<!--personal JS-->
+<!--IMAGINE - this is ALL in another file-->
+<script type="text/babel">
+
+    ReactDOM.render(<p>Hello fromt eh p tag!!!</p>,
+        document.getElementById("root"))
+
+
+
+</script>
+</body>
+</html>
