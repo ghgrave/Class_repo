@@ -1,0 +1,32 @@
+#root {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+
+.name {
+  font-size: 3em;
+  margin: .25em;
+}
+
+
+.theimage {
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: #0b3982;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 4px solid #18dbdb;
+  color: #26d371;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.theimage img {
+  width: 700px;
+  padding: 4px 20px 10px 20px;
+}
