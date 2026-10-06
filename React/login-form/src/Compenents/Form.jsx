@@ -12,8 +12,16 @@ const Form = () => {
         setSeePassword(!seePassword)
     }
 
+    const handleSubmit = (event) =>{
+        event.preventDefault()
+        console.log(" I clicked!!!!")
+    }
+
     return (
-        <form action="">
+        // html = page focused
+        // route focused - api/data/getdata
+        // React = event focused
+        <form onSubmit={handleSubmit} >
             <label>User Name:
                 <input type="text"/>
             </label>
