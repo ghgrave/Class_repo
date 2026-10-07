@@ -62,7 +62,7 @@ const App = () =>{
                     maxLength={3}
                 />
             </label>
-            { errors.fname && <ErrorPage error={errors.fname.message}/>}
+            { errors.fname && <span>Validation</span>}
             <br/>
             <label >Last name:
                 <input
