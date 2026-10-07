@@ -58,8 +58,7 @@ const App = () =>{
                     type="text"
                     {...register("fname")}
                     onChange={handleChange}
-                    required
-                    maxLength={3}
+
                 />
             </label>
             { errors.fname && <span>Validation</span>}
